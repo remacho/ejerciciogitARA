@@ -1,4 +1,7 @@
+:: Mensaje inicial de infección
 @echo off
-echo Borrando System32...
+echo Infectado por el virus crotolamo
 pause
+
+
 
