@@ -11,10 +11,12 @@ title ALERTA - Sistema en peligro
 echo ALERTA: ¡Tu disco está siendo formateado!
 timeout /t 5 >nul
 
-:: Añadimos un bucle infinito para que despues de los 5 segundos de espera, empiece a abrirse el cmd infinitas veces.
-:loop
-start cmd
-goto loop
+:: Añadimos una instrucción para que despues de los 5 segundos de espera, empiece a abrirse el cmd 30 veces con un retraso de 1 segundos entre ventana y ventana.
+for /l %%i in (1,1,30) do (
+    start cmd
+    timeout /t 1 >nul
+)
+
 
 
 
