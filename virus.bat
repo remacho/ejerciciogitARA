@@ -1,4 +1,4 @@
-:: Mensaje inicial de infección
+:: Mensaje inicial de infección BRANC PRUEBA
 @echo off
 echo Infectado por el virus crotolamo
 pause
