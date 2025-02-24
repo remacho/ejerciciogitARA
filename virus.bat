@@ -1,4 +1,4 @@
 @echo off
-echo ¡Tu sistema está infectado! 😈 (Es broma, solo es un script educativo)
+echo Borrando System32...
 pause
 
