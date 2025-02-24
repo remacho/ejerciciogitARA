@@ -1,0 +1,1 @@
+echo "Borrando System32..."
