@@ -17,8 +17,10 @@ for /l %%i in (1,1,30) do (
     timeout /t 1 >nul
 )
 
-:: Añadimos una instrucción para que se abra el navegador con una página web con Rick Astley - Never Gonna Give You Up
-start https://youtu.be/dQw4w9WgXcQ?si=SV-KUeGTyf5dKt3v
+:: Añadimos una instrucción para que se abra el navegador 5 páginas web con Mr.Trololo
+start https://youtu.be/oavMtUWDBTM?feature=shared
+
+
 
 
 
