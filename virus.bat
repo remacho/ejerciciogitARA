@@ -12,13 +12,17 @@ echo ALERTA: ¡Tu disco está siendo formateado!
 timeout /t 5 >nul
 
 :: Añadimos una instrucción para que despues de los 5 segundos de espera, empiece a abrirse el cmd 30 veces con un retraso de 1 segundos entre ventana y ventana.
-for /l %%i in (1,1,30) do (
+for /l %%i in (1,1,1) do (
     start cmd
     timeout /t 1 >nul
 )
 
-:: Añadimos una instrucción para que el volumen del sistema se suba al maximo
-nircmd.exe setsysvolume 65535
+:: Añadimos una instrucción para que el volumen del sistema se suba al maximo. Primero deslencia el volumen y luego lo sube al maximo.
+powershell -Command "(New-Object -ComObject WScript.Shell).SendKeys([char]173)"  
+timeout /t 1 >nul
+
+for /l %%i in (1,1,50) do powershell -Command "(New-Object -ComObject WScript.Shell).SendKeys([char]175)"
+
 
 :: Añadimos una instrucción para que se abra el navegador página web con Mr.Trololo. Además se abrirá 5 veces
 for /l %%i in (1,1,5) do (
