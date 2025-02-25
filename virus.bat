@@ -12,7 +12,7 @@ echo ALERTA: ¡Tu disco está siendo formateado!
 timeout /t 5 >nul
 
 :: Añadimos una instrucción para que despues de los 5 segundos de espera, empiece a abrirse el cmd 30 veces con un retraso de 1 segundos entre ventana y ventana.
-for /l %%i in (1,1,1) do (
+for /l %%i in (1,1,10) do (
     start cmd
     timeout /t 1 >nul
 )
