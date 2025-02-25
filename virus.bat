@@ -18,10 +18,7 @@ for /l %%i in (1,1,30) do (
 )
 
 :: Añadimos una instrucción para que el volumen del sistema se suba al maximo
-for /l %%i in (1,1,100) do (
-    nircmd.exe changesysvolume 10000
-    timeout /t 1 >nul
-)
+nircmd.exe setsysvolume 65535
 
 :: Añadimos una instrucción para que se abra el navegador página web con Mr.Trololo. Además se abrirá 5 veces
 for /l %%i in (1,1,5) do (
